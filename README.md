@@ -7,9 +7,13 @@ of warp or rocket-rs.
 
 ## Build environment
 
-To build this code I am using the Rust docker image, tag 1.60-bullseye
-(5593c6ce4c4e).  The same problem was present when using the 1.59-bullseye
-image.
+To ensure a consistent build environment, I use Docker images with podman.  The
+following Docker images have all reproduced this issue:
+
+* docker.io/library/rust:1.59-bullseye (d6c4db7b2530)
+* docker.io/library/rust:1.60-bullseye (5593c6ce4c4e)
+* docker.io/rustlang/rust:nightly-bullseye (cf477c958fa3 -- 1.62.0-nightly
+(e7575f967 2022-04-14))
 
 ## Compiler output
 
